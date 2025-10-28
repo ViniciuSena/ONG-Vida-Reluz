@@ -1,0 +1,48 @@
+/* Responsividade */
+@media screen and (max-width: 1024px) {
+    .main-nav {
+        padding: 1rem;
+    }
+
+    section {
+        padding: 4rem 1rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .nav-links {
+        display: none;
+        /* Menu mobile será implementado via JavaScript */
+    }
+
+    .hero-section h2 {
+        font-size: 2rem;
+    }
+
+    .cta-buttons {
+        flex-direction: column;
+    }
+
+    .mission-vision-values,
+    .projects-grid,
+    .opportunities-grid,
+    .donation-options {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .btn {
+        width: 100%;
+        text-align: center;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+}
